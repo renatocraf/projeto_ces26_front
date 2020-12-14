@@ -59,7 +59,6 @@ class Login extends React.Component {
         return (
             <div className="position-relative overflow-hidden m-md-3 text-center bg-light">
                 {this.state.sucesso && <Redirect to="/search"/>}
-                <iframe src="https://www.w3schools.com"></iframe>
                 <div className="col-md-5 p-lg-5 mx-auto ">
                     <h1 className="display-4 font-weight-normal">Login</h1>
                     <div className="form-login">
