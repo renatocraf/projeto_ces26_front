@@ -10,3 +10,15 @@
     margin:10px;
     
 }
+
+.Sem_cadastro{
+    color: red;
+}
+
+.botaoGoogle{
+    
+        display: flex;
+        justify-content: center;
+    
+
+}

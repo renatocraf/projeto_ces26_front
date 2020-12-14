@@ -58,7 +58,7 @@ class Login extends React.Component {
     render() {
         return (
             <div className="position-relative overflow-hidden m-md-3 text-center bg-light">
-                {this.state.sucesso && <Redirect to="/search"/>}                
+                {this.state.sucesso && <Redirect to="/search"/>}
                 <div className="col-md-5 p-lg-5 mx-auto ">
                     <h1 className="display-4 font-weight-normal">Login</h1>
                     <div className="form-login">

@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Dropdown from 'react-bootstrap/Dropdown'
 import { Link } from 'react-router-dom'
+
 //<!-- data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation" aqui embaixo-->
 
+import {Context} from '../../Context/AuthContext'
 
-export default props =>
-    <nav className="navbar navbar-dark bg-dark shadow-sm fixed-top" id="header">
-        <div className="container d-flex justify-content-between">
-            <div className="navbar-brand d-flex align-items-center">
+export default function Header() {
+    const {handleLogout, authenticated} = useContext(Context);
+    
+    
+    return <nav class="navbar navbar-dark bg-dark shadow-sm fixed-top" id="header">
+        <div class="container d-flex justify-content-between">
+            <div class="navbar-brand d-flex align-items-center">
                 <strong>Vila Market</strong>
             </div>            
             <Dropdown>
@@ -18,9 +23,15 @@ export default props =>
                 <Dropdown.Menu>
                     <Dropdown.Item ><Link to="/search">Buscar Produto</Link></Dropdown.Item>
                     <Dropdown.Item ><Link to="/anuncio">Anuncie Já!</Link></Dropdown.Item>
-                    <Dropdown.Item ><Link to="/login">Login</Link></Dropdown.Item>
-                    <Dropdown.Item ><Link to="/cadastro">Cadastro</Link></Dropdown.Item>
+                    {!authenticated && <Dropdown.Item ><Link to="/login">Login</Link></Dropdown.Item>}
+                    {authenticated  && <Dropdown.Item onClick={handleLogout}><Link to="/login">Logout</Link></Dropdown.Item>}
+                    
+                        
+                    
+                    
                 </Dropdown.Menu>
             </Dropdown>
         </div>
     </nav>
+
+}
