@@ -1,0 +1,41 @@
+input.currency {
+    text-align: right;
+    padding-right: 15px;
+    float: none;
+}
+
+.form-control {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.input-group .input-buttons {
+    position: relative;
+    z-index: 3;
+}
+
+.posicao{
+	padding-top: 00px;
+	
+}
+
+.react-tel-input {
+	font-size: 0.9rem ;
+}
+
+.react-tel-input.form-control {
+	margin-top: 0 ;
+	margin-bottom: 0 ;
+	height: 3.5rem ;
+	position: relative;
+	letter-spacing: .01rem;
+	border-radius: 0 ;
+	margin-top: 0 ;
+	margin-bottom: 0 ;
+	width: 10% ;
+	font-size: 0.9rem ;
+}
+
+.quadrado{
+	height: 400px;
+}

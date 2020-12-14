@@ -1,0 +1,57 @@
+.borda{
+    border-radius: 15px;
+    border-width: 3px;
+    /*border-color: whitesmoke;*/
+    border-color: black;
+    padding:0px;
+    width: 1100px;
+}
+
+.item2{
+    display:grid;
+    grid-template-rows: repeat(5,20%);
+    
+}
+
+.item {    
+    grid-row: span 2;
+    
+    
+    height: 100%;
+    display:grid;
+    grid-template-columns: repeat(4,25%);
+    align-items: center;
+    padding: 5px;
+}
+.image_item{
+    
+    height: 190px;
+    width: 190px;
+    border-radius: 10%;
+    
+}
+
+.price {
+    text-align: right;
+    padding-right: 40px;
+}
+
+.info_item{
+    grid-column: span 3;
+}
+
+.quadrada{
+    
+    width: 1100 px;
+    height: 800 px;
+    /*border: 5px solid red;*/
+    color: green;
+    overflow: hidden;
+    grid-row: span 3;
+    
+}
+
+.ampliada{
+    height :800px;
+    padding-left: 0px;
+}

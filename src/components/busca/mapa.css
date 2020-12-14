@@ -1,0 +1,7 @@
+.quadrada{
+    width: 250px;
+    height: 250px;
+    /*border: 5px solid red;*/
+    color: green;
+    overflow: hidden;
+}
