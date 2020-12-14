@@ -1,2 +1,2 @@
-export const baseApiUrl = 'http://localhost:4000'
+export const baseApiUrl = REACT_APP_API_URL
 export const clientId = ''
